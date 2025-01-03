@@ -1,0 +1,62 @@
+.hero {
+	position: relative; /* Needed to position the pseudo-element */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	height: 500px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff; /* Text color */
+	overflow: hidden; /* Ensure no overflow of the overlay */
+}
+
+.hero h2 {
+	font-size: 3rem;
+    font-weight: 500;
+	color: #fff;
+    margin-top: 2rem;
+}
+.hero::before {
+	content: ""; /* Required for pseudo-element */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.658); /* Overlay color */
+	color: #fff;
+	z-index: 1; /* Place the overlay below the text */
+}
+
+.hero-overlay {
+	position: relative; /* Ensure the content is above the overlay */
+	z-index: 2;
+	text-align: center;
+	padding: 20px;
+}
+@media (max-width: 768px) {
+	
+	.hero {
+		height: 400px; /* Smaller height for small screens */
+		padding: 10px; /* Adjust padding as needed */
+	}
+}
+
+@media (max-width: 480px) {
+	/* Adjust for very small screens */
+	.hero {
+		height: 350px; /* Further reduced height */
+		padding: 5px; /* Further adjust padding */
+	}
+
+	.hero h2 {
+		font-size: 1.85rem;
+		color: #fff;
+	}
+
+    .hero p{
+        font-size: .8rem;
+    }
+}
