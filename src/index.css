@@ -11,7 +11,7 @@
 
 /* CSS for a sleek gradient fading to white */
 body {
-	background: linear-gradient(135deg, hsl(167, 94%, 93%), #ffffff);
+	background: linear-gradient(135deg, hsl(169, 100%, 97%), #ffffff);
 	color: #000;
 
 	font-family: "Poppins", serif;
@@ -52,7 +52,7 @@ h2 {
 }
 
 .shadowOne {
-	box-shadow: 0px 15px 20px rgba(0, 148, 118, 0.17);
+	box-shadow: 0px 10px 20px rgba(0, 148, 118, 0.167);
 }
 
 .menu-slide-in {
@@ -179,6 +179,6 @@ h2 {
 }
 @media screen and (max-width: 350px) {
 	.container {
-		padding: 1rem;
+		padding: .5rem;
 	}
 }

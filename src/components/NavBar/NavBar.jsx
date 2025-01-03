@@ -157,10 +157,10 @@ const NavBar = () => {
 				</div>
 			</div>
 
-			{/* Menu Section */}
+			{/* Mobile Menu Section */}
 			{showMenu && (
-				<div className="md:hidden bg-white   absolute right-0  top-36 px-5 py-5 rounded-xl opacity-0 animate-fadeIn transition-all duration-500 ease-in-out   shadowOne">
-					<ul className="flex flex-col items-center gap-8 text-xl font-medium text-primary">
+				<div className="md:hidden bg-slate-50  fixed bottom-0 left-0 w-full px-5 py-5 rounded-xl opacity-0 animate-fadeIn transition-all duration-500 ease-in-out   shadowOne">
+					<ul className="flex justify-between items-center  text-xl font-medium text-primary">
 						<NavLink
 							to="/"
 							className="hover:scale-125 transition-all duration-500"

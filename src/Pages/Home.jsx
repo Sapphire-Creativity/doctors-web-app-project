@@ -11,10 +11,10 @@ const Home = () => {
 		<>
 			<header
 				className="relative bg-cover bg-center h-[100vh]"
-				style={{ backgroundImage: `url("../src/assets/home-background.jpg")` }}
+				style={{ backgroundImage: `url("https://img.freepik.com/free-photo/team-young-specialist-doctors-standing-corridor-hospital_1303-21199.jpg?t=st=1735899460~exp=1735903060~hmac=09f78d4fa1f2f226fc251363fffb98a76be688e936033bf59a1c61fa528b5a72&w=2000")` }}
 			>
 				{/* Overlay */}
-				<div className="absolute inset-0 bg-accent opacity-60"></div>
+				<div className="absolute inset-0 bg-accent opacity-70"></div>
 
 				{/* Content */}
 				<div className=" max-w-[95%] sm:max-w-[88%] lg:max-w-[60%] m-auto relative flex flex-col items-center justify-center h-full z-10 text-white">

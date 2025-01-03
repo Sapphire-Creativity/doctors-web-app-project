@@ -7,7 +7,7 @@ const TitleHeader = ({ title, children }) => {
 				{title}
 			</h2>
 			<span className="w-[5%] h-[0.15rem] rounded-full m-auto bg-primary my-2"></span>
-			<p className="text-gray-600 text-[0.76rem] sm:text-[1rem] max-w-[100%] md:max-w-[80%] m-auto ">
+			<p className="text-gray-600 text-[0.8rem] sm:text-[1rem]   md:max-w-[80%] m-auto ">
 				{children}
 			</p>
 		</div>
