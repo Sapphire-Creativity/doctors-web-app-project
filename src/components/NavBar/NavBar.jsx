@@ -136,7 +136,7 @@ const NavBar = () => {
 					{/* Search Icon */}
 					<button
 						onClick={handleShowSearch}
-						className="p-3 text-lg rounded-full bg-gray-100 neomorphic hover:scale-105 transition"
+						className="hidden md:block p-3 text-lg rounded-full bg-gray-100 neomorphic hover:scale-105 transition"
 						aria-label="Search"
 					>
 						<RiSearch2Line />
@@ -159,32 +159,40 @@ const NavBar = () => {
 
 			{/* Mobile Menu Section */}
 			{showMenu && (
-				<div className="md:hidden bg-slate-50  fixed bottom-0 left-0 w-full px-5 py-5 rounded-xl opacity-0 animate-fadeIn transition-all duration-500 ease-in-out   shadowOne">
+				<div className="md:hidden bg-slate-100  fixed bottom-0 left-0 w-full px-5 py-5 rounded-xl opacity-0 animate-fadeIn transition-all duration-500 ease-in-out   shadowOne">
 					<ul className="flex justify-between items-center  text-xl font-medium text-primary">
 						<NavLink
 							to="/"
-							className="hover:scale-125 transition-all duration-500"
+							className="p-3 text-lg rounded-full bg-gray-100 neomorphic hover:scale-105 transition"
 						>
 							<AiFillHome />
 						</NavLink>
 						<NavLink
 							to="/about"
-							className="hover:scale-125 transition-all duration-500"
+							className="p-3 text-lg rounded-full bg-gray-100 neomorphic hover:scale-105 transition"
 						>
 							<AiOutlineTeam />
 						</NavLink>
 						<NavLink
 							to="/alldoctors"
-							className="hover:scale-125 transition-all duration-500"
+							className="p-3 text-lg rounded-full bg-gray-100 neomorphic hover:scale-105 transition"
 						>
 							<FaStethoscope />
 						</NavLink>
 						<NavLink
 							to="/contact"
-							className="hover:scale-125 transition-all duration-500"
+							className="p-3 text-lg rounded-full bg-gray-100 neomorphic hover:scale-105 transition"
 						>
 							<FiPhoneCall />
 						</NavLink>
+
+						<button
+							onClick={handleShowSearch}
+							className="p-3 text-lg rounded-full bg-gray-100 neomorphic hover:scale-105 transition"
+							aria-label="Search"
+						>
+							<RiSearch2Line />
+						</button>
 					</ul>
 				</div>
 			)}
