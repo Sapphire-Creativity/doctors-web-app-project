@@ -8,7 +8,7 @@ import CountUp from "react-countup";
 const AboutSectionOne = () => {
 	return (
 		<div className="container">
-			<div className="flex flex-col">
+			<div className="flex flex-col py-10">
 				<div className="flex flex-col lg:flex-row items-stretch justify-center gap-5">
 					{/* Image Section */}
 					<div className="flex-1 order-2 lg:order-1">
@@ -25,10 +25,10 @@ const AboutSectionOne = () => {
 							WHO WE ARE
 						</h5>
 						<hr className="w-10 h-[0.2rem] rounded-full bg-primary my-3" />
-						<h3 className="text-2xl lg:text-4xl my-3 font-bold text-gray-800">
+						<h3 className="text-3xl lg:text-5xl my-3 font-bold text-gray-800">
 							With us, expect more than just Healthcare Services.
 						</h3>
-						<p className="text-gray-600 text-[0.8rem]">
+						<p className="text-gray-600 text-[0.9rem] py-4">
 							Welcome to MediCare, your trusted partner in personalized
 							healthcare. We are committed to bridging the gap between patients
 							and doctors by offering a seamless platform where you can book

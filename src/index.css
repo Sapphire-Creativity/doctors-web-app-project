@@ -11,7 +11,7 @@
 
 /* CSS for a sleek gradient fading to white */
 body {
-	background: linear-gradient(135deg, hsl(169, 100%, 97%), #ffffff);
+	/* background: linear-gradient(135deg, hsl(169, 100%, 97%), #ffffff); */
 	color: #000;
 
 	font-family: "Poppins", serif;
